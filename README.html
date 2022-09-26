@@ -407,11 +407,10 @@ for this model using the validation set approach. Comment on whether or
 not including <code>student</code> leads to a reduction in the test
 error rate.</p></li>
 </ol></li>
-<li><p>The <code>cv.glm()</code> function can be used to compute the
+<li><p>The <code>vfold_cv()</code> function can be used to compute the
 LOOCV test error rate estimate. Alternatively, one could compute those
-quanitities using <code>glm()</code>, <code>predict.glm()</code>, and a
-<code>for</code> loop. You will take the second approach in the
-following problem.</p>
+quantitities using a <code>for</code> loop. You will take the second
+approach in the following problem.</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>Fit a logistic regression model that predicts
 <code>Direction</code> using <code>Lag1</code> and <code>Lag2</code>

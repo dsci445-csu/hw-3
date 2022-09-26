@@ -34,7 +34,7 @@ set.seed(445)
     
     d. Now consider  logistic regression model that predicts the probability of default using `income`, `balance`, and a dummy variable for `student`. Estimate the test error for this model using the validation set approach. Comment on whether or not including `student` leads to a reduction in the test error rate.
     
-4. The `cv.glm()` function can be used to compute the LOOCV test error rate estimate. Alternatively, one could compute those quanitities using `glm()`, `predict.glm()`, and a `for` loop. You will take the second approach in the following problem.
+4. The `vfold_cv()` function can be used to compute the LOOCV test error rate estimate. Alternatively, one could compute those quantitities using a `for` loop. You will take the second approach in the following problem.
 
     a. Fit a logistic regression model that predicts `Direction` using `Lag1` and `Lag2` using the `Weekly` data set.
     
